@@ -1,0 +1,44 @@
+@import '../../../variables.scss';
+
+.home_section{
+    padding-top: 100px;
+    display: grid;
+    grid-template-columns: 0.3fr 1fr 0.3fr;
+}
+.content{
+    display: flex;
+    justify-content: center;
+}
+.container_titulos{
+    padding-right: 100px;
+    line-height: normal;
+    display: flex;  
+    flex-direction: column;
+    justify-content: center;
+    line-height: 0;
+}
+
+h2{
+    font-size: 2.5em;
+    color: $text-color;
+}
+
+.container_socialmedia{
+    background-image: url('../../../assets/foto_home.png');
+    background-repeat: no-repeat;
+    width: 40%;
+    height: 470px;
+    background-size: 400px;
+    display: flex;
+    justify-content:end;
+    align-items: end;
+}
+
+li{
+    list-style: none;
+}
+
+li > a{
+    text-decoration: none;
+    color: $text-color;
+}
