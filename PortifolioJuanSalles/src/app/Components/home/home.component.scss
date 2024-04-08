@@ -1,7 +1,7 @@
 @import '../../../variables.scss';
 
 .home_section{
-    padding-top: 100px;
+    padding-top: 74px;
     display: grid;
     grid-template-columns: 0.3fr 1fr 0.3fr;
 }
@@ -24,7 +24,7 @@ h2{
 }
 
 .container_socialmedia{
-    background-image: url('../../../assets/foto_home.png');
+    // background-image: url('../../../assets/foto_home.png');
     background-repeat: no-repeat;
     width: 40%;
     height: 470px;
