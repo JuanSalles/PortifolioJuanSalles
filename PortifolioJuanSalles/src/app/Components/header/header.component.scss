@@ -4,10 +4,11 @@
 header{
     display:grid;
     grid-template-columns: 1fr 1fr;
-    padding: 20px 25px;
+    padding: 20px 25px 10px;
     align-items: center;
     position: fixed;
     width: 100vw;
+    background: linear-gradient(180deg, $background-color 95%, #00000000 100%);
 }
 h3{
     margin: 0;
@@ -21,7 +22,8 @@ h3{
 
 nav{
     display: flex;
-    justify-content: flex-end;
+    flex-direction: column;
+    align-items: end;
 }
 .menu_hamburguer{
     display: flex;
@@ -29,24 +31,40 @@ nav{
     background-size: contain;
     width: 32px;
     height: 26px;
+    background-repeat: no-repeat;
 }
 
 #inputMenuHamburguer:checked ~ .menu_hamburguer {
     background-image: url('../../../assets/Header/Button_hamburguer_on.png');
 }
 
-#inputMenuHamburguer:checked ~ ul {
-    display: flex;
-    flex-direction: column;
-    list-style: none;
-    position: absolute;
-}
-
-
 nav > ul {
     display: none;
+    list-style: none;
+    position: absolute;
+    top: 60px;
+    margin: 0;
+    padding: 0;
+    width: 50%;
+    flex-direction: column;
 }
 
+#inputMenuHamburguer:checked ~ ul {
+    display: flex;
+}
+
+li{
+    padding: 10px;
+    text-align: center;
+    background-color: $background-color;
+    width: 100%;
+    border-bottom: 1px solid $primary-color;
+    border-top: 1px solid $primary-color;
+    border-right: 1px solid $primary-color;
+    border-left: 1px solid $primary-color;
+    z-index: 1;
+    transition: 0.5s;
+}
 
 li > a{
     text-decoration: none;
@@ -56,4 +74,36 @@ li > a{
 
 li > a:hover{
     color: $secondary-color;
+}
+
+@media (min-width: 768px){
+    header{
+        grid-template-columns: 0.5fr 1fr 0.5fr;
+    }
+    nav{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    .menu_hamburguer{
+        display: none;
+    }
+    nav > ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        position: unset;
+        width: max-content;
+    }
+    li{
+        border: none;
+        background-color: transparent;
+    }
+    li > a{
+        font-size: 16px;
+    }
+    li > a:hover{
+        color: $primary-color;
+    }
+    
 }
