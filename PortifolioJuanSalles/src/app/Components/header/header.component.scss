@@ -4,11 +4,11 @@
 header{
     display:grid;
     grid-template-columns: 1fr 1fr;
-    padding: 20px 25px 10px;
+    padding: 10px 25px;
     align-items: center;
     position: fixed;
     width: 100vw;
-    background: linear-gradient(180deg, $background-color 95%, #00000000 100%);
+    background: $background-header;
 }
 figure{
     margin: 0;
@@ -42,14 +42,15 @@ nav{
     background-image: url('../../../assets/Header/Button_hamburguer_on.png');
 }
 
-nav > ul {
+nav > .menu_navgation {
     display: none;
     list-style: none;
     position: absolute;
-    top: 75px;
+    top: 53px;
+    right: 0;
     margin: 0;
     padding: 0;
-    width: 50%;
+    width: 100%;
     flex-direction: column;
 }
 
@@ -58,16 +59,16 @@ nav > ul {
 }
 
 li{
-    padding: 10px;
     text-align: center;
-    background-color: $background-color;
-    width: 100%;
-    border-bottom: 1px solid $primary-color;
-    border-top: 1px solid $primary-color;
-    border-right: 1px solid $primary-color;
-    border-left: 1px solid $primary-color;
+    color: $background-color;
+    background: $background-header;
+    border-bottom: 1px solid $background-color;
+    border-top: 1px solid $background-color;
+    border-right: 1px solid $background-color;
+    border-left: 1px solid $background-color;
     z-index: 1;
     transition: 0.5s;
+    padding: 10px;
 }
 
 li > a{
@@ -77,7 +78,19 @@ li > a{
 }
 
 li > a:hover{
-    color: $secondary-color;
+    color: $hover-color;
+}
+
+a > img {
+    width: 32px;
+    margin: 0;
+}
+
+.social-media_list{
+    display: none;
+    list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
 @media (min-width: 768px){
@@ -92,7 +105,7 @@ li > a:hover{
     .menu_hamburguer{
         display: none;
     }
-    nav > ul{
+    nav > .menu_navgation{
         display: flex;
         flex-direction: row;
         justify-content: space-around;
@@ -101,7 +114,7 @@ li > a:hover{
     }
     li{
         border: none;
-        background-color: transparent;
+        background: transparent;
     }
     li > a{
         font-size: 16px;
@@ -109,5 +122,45 @@ li > a:hover{
     li > a:hover{
         color: $primary-color;
     }
+
+    .container_socialmedia{
+        display: flex;
+        justify-content: end;
+    }
+
+    .social-media_list{
+        display:flex;
+    }
+
+    a > img{
+        width: 35px;
+    }
+
+    .social-media_list > li{
+        padding-inline: 0px;
+    }
     
+}
+
+@media (min-width: 1024px){
+
+    header{
+        padding: 15px 50px;
+    }
+    figure{
+        display: flex;
+        justify-content: end;
+    }
+    figure > img{
+        width: 50px;
+        margin-right: 20px;
+    }
+    
+    a > img{
+        width: 50px;
+        padding-inline-end: 10px;
+    }
+    .container_socialmedia{
+        justify-content: start;
+    }
 }
