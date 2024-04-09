@@ -10,8 +10,12 @@ header{
     width: 100vw;
     background: linear-gradient(180deg, $background-color 95%, #00000000 100%);
 }
-h3{
+figure{
     margin: 0;
+}
+
+figure > img{
+    width: 35px;
 }
 
 .decoration_title{
@@ -42,7 +46,7 @@ nav > ul {
     display: none;
     list-style: none;
     position: absolute;
-    top: 60px;
+    top: 75px;
     margin: 0;
     padding: 0;
     width: 50%;
