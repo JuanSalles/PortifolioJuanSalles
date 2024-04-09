@@ -1,37 +1,51 @@
 @import '../../../variables.scss';
 
 .home_section{
-    padding-top: 100px;
-    display: grid;
-    grid-template-columns: 0.3fr 1fr 0.3fr;
+    padding-top: 90px;
+    display: flex;
+    justify-content: center;
 }
 .content{
     display: flex;
     justify-content: center;
+    flex-direction: column;
+    width: 90%;
+    align-items: center;
 }
 .container_titulos{
-    padding-right: 100px;
-    line-height: normal;
     display: flex;  
     flex-direction: column;
-    justify-content: center;
-    line-height: 0;
+    justify-content: start;
+    width: 90%;
 }
 
 h2{
-    font-size: 2.5em;
+    font-size: 1em;
+    padding: 0;
+    margin: 0;
     color: $text-color;
+}
+
+h3{
+    margin: 0;
+    font-size: 0.8em;
 }
 
 .container_socialmedia{
     background-image: url('../../../assets/foto_home.png');
     background-repeat: no-repeat;
-    width: 40%;
-    height: 470px;
-    background-size: 400px;
+    background-position: center;
+    background-size:contain;
+    width: 90%;
+    height: 355px;
     display: flex;
-    justify-content:end;
-    align-items: end;
+    justify-content:center;
+    align-items: center;
+}
+
+ul{
+    margin-top: 255px;
+    padding-left: 240px
 }
 
 li{
@@ -41,4 +55,9 @@ li{
 li > a{
     text-decoration: none;
     color: $text-color;
+}
+
+a > img {
+    width: 30px;
+    margin: 0px 15px;
 }
