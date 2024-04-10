@@ -13,3 +13,13 @@ body{
     margin: 0;
     padding: 0;
 }
+
+.title-pagina{
+    font-size: 2.5em;
+    margin-right: auto;
+    padding-left: 20px;
+    font-family: $font-titles;
+    color: $texto-colot-title;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
