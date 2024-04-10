@@ -1,8 +1,38 @@
+
+
 $primary-color: #69b0b5;
 $secondary-color: #8456d6;
 $thirdy-color: #057694;
-$background-color: #051825;
-$text-color: #c9dbe0;
+$background-color: #fefefe;
+$text-color: #fefefe;
 $border-color: #c9dbe0;
 $hover-color: #69b0b5;
-$font-family: 'Roboto', sans-serif;
+$font-family: 'Mohave', sans-serif;
+$background-header: #0F0F0F;
+$font-banner: 'Jolly Lodger', cursive;
+$font-titles: 'Oleo Script', cursive;
+$texto-colot-title: #575757;
+$background-banner: linear-gradient(
+    120deg,
+    hsl(0deg 0% 0%) 0%,
+    hsl(207deg 100% 10%) 14%,
+    hsl(205deg 100% 11%) 23%,
+    hsl(204deg 100% 13%) 31%,
+    hsl(201deg 100% 15%) 37%,
+    hsl(199deg 100% 17%) 42%,
+    hsl(198deg 100% 19%) 47%,
+    hsl(196deg 100% 21%) 51%,
+    hsl(195deg 100% 23%) 55%,
+    hsl(194deg 100% 25%) 59%,
+    hsl(193deg 100% 27%) 63%,
+    hsl(192deg 100% 29%) 66%,
+    hsl(192deg 100% 31%) 70%,
+    hsl(191deg 100% 33%) 74%,
+    hsl(191deg 100% 35%) 77%,
+    hsl(190deg 96% 39%) 81%,
+    hsl(192deg 69% 47%) 86%,
+    hsl(192deg 66% 53%) 92%,
+    hsl(193deg 73% 58%) 100%
+  );
+$border-banner: #d9d9d9;
+$text-color-banner: #fefefe;
