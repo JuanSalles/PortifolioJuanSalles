@@ -1,5 +1,6 @@
 import { Component, Input, Type } from '@angular/core';
 import { TypeWindown } from 'src/Interfaces/TypeWindown';
+import { ISkill } from 'src/Interfaces/ISkill';
 
 @Component({
   selector: 'app-janela-mac',
@@ -10,6 +11,7 @@ export class JanelaMacComponent {
 
   @Input() typeWindown!: TypeWindown;
   @Input() content: string[] = [];
+  @Input() Skills: ISkill[] = [];
 
   constructor() { 
     

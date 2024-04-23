@@ -1,0 +1,16 @@
+@import '../../../variables.scss';
+
+footer{
+    background: $background-header;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+p{
+    font-family: $font-family;
+    margin: 0 auto;
+    width: 100vw;
+    text-align: center;
+}
