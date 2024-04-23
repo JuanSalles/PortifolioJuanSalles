@@ -1,0 +1,27 @@
+<section class="windown_container" >
+    <div *ngIf="typeWindown == 0" class="prompt_container">
+        <div class="header-prompt">
+            <div class="icones-mac">
+                <div class="circulo vermelho"></div>
+                <div class="circulo amarelo"></div>
+                <div class="circulo verde"></div>
+            </div>
+        </div>
+        <div class="prompt">
+            <p *ngFor="let paragrafo of content">
+                > {{paragrafo}}
+            </p>
+        </div>
+    </div>
+    <div *ngIf="typeWindown == 1" class="image_container">
+        <div class="header-prompt">
+            <div class="icones-mac">
+                <div class="circulo vermelho"></div>
+                <div class="circulo amarelo"></div>
+                <div class="circulo verde"></div>
+            </div>
+        </div>
+        <img class="fotoPerfil" src={{content[0]}} alt={{content[1]}}>
+    </div>
+    
+</section>

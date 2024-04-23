@@ -13,55 +13,19 @@
     max-width: 480px;
 }
 
-.fotoPerfil{
-    width: calc(100% - 40px);
-    margin-bottom: 10px;
-    border-radius: 0 0 7px 7px;
-}
-.header-prompt{
-    width: calc(100% - 40px);
-    height: 25px;
-    background-color: #c1c1c1;
-    border-radius: 7px 7px 0 0;
-    display: flex;
-    justify-content: start;
-    align-items: center;
-    padding-left: 10px;
-}
-.prompt{
-    background-color:#272727;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border-radius: 0 0 7px 7px;
-    margin-inline: 20px;
-}
-p{
-    font-family: $font-family;
-    font-weight: 400;
-    max-width: 80%;
-    color: $text-color;
-}
 
-.circulo {
-    border-radius: 50%;
-    width: 13px;
-    height: 13px;
+app-janela-mac{
+    width: 100%;
 }
+@media (min-width: 768px){
 
-.icones-mac{
-    display: flex;
-    justify-content: space-between;
-    gap: 10px;	
-    width: max-content;
-}
-
-.verde{
-    background-color: #46d755;
-}
-.vermelho{
-    background-color: #ff5f57;
-}
-.amarelo{
-    background-color: #ffcf1a;
+    .text_container{
+        max-width: 1166px;
+    }
+     
+    .about_section{
+        display: grid;
+        grid-template-columns: 0.5fr 1fr;
+        justify-content: center;
+    }
 }

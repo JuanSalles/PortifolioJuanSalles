@@ -12,6 +12,7 @@ import { FooterComponent } from './Components/footer/footer.component';
 import { SkillCardComponent } from './Components/skill-card/skill-card.component';
 import { ProjectsComponent } from './Components/projects/projects.component';
 import { ProjectCardComponent } from './Components/project-card/project-card.component';
+import { JanelaMacComponent } from './Components/janela-mac/janela-mac.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { ProjectCardComponent } from './Components/project-card/project-card.com
     FooterComponent,
     SkillCardComponent,
     ProjectsComponent,
-    ProjectCardComponent
+    ProjectCardComponent,
+    JanelaMacComponent
   ],
   imports: [
     BrowserModule

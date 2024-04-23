@@ -3,12 +3,22 @@
 .home_section{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    background: $background-banner;
     margin-top: 53.4333px;
     font-family: $font-banner;
     color: $text-color-banner;
     border-bottom: 3px solid $border-banner;
-    padding-top: 15px;
+    justify-content: center;
+}
+
+ .container_Background{
+    background: url('../../../assets/Home/BACKGROUND-CORVOS1.png'), url('../../../assets/Home/BACKGROUND-CORVOS2.png'), $background-banner;
+    background-size:contain, contain, cover;
+    background-repeat: no-repeat, no-repeat, no-repeat; 
+    background-position: 0 0, 100% 100%, 0 0;
+    width: 100vw;
+    height: 271px;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
 }
 .Container_Textos{
@@ -16,7 +26,6 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    margin-left: 10px;
 }
 
 .titulos{
@@ -24,13 +33,13 @@
     text-align: center;
 }
 h1{
-    font-size: 45px;
+    font-size: 58px;
     margin: 0;
+    line-height: 0.8;
 }
 
 .citacao{
     text-align: center;
-    padding-bottom: 20px;
 }
 p{
     font-size: 16px;
@@ -59,4 +68,35 @@ figure{
 figure > img{
     width: 191px;
     padding-right: 15px;
+}
+
+@media (min-width: 768px){
+    
+    .home_section{
+        margin-top: 110px;
+    }
+}
+
+@media (min-width: 1024px){
+
+    .container_Background{
+        height: 500px;
+    }
+
+    h1{
+        font-size: 120px;
+    }
+    p{
+        font-size: 24px;
+    }
+    .container_socialmedia{
+        display: none;
+    }
+
+    .Container_Textos{
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr;
+        justify-content: center;
+        align-items: center;
+    }
 }

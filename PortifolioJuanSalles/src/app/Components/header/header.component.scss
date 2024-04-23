@@ -68,14 +68,15 @@ li{
     border-right: 1px solid $background-color;
     border-left: 1px solid $background-color;
     z-index: 1;
-    transition: 0.5s;
-    padding: 10px;
+    padding: 25px;
+    margin-bottom: -1px;
 }
 
 li > a{
     text-decoration: none;
     color: $text-color;
     font-size: 20px;
+    font-family: $font-family;
 }
 
 li > a:hover{
@@ -155,6 +156,10 @@ a > img {
     figure > img{
         width: 50px;
         margin-right: 20px;
+    }
+
+    li > a{
+        font-size: 1.3rem;
     }
     
     a > img{
