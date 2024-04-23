@@ -10,6 +10,24 @@ export class SkillsComponent {
 
   skills: ISkill[] = [
     {
+      name: 'HTML',
+      level: 3,
+      description: 'HTML',
+      icon: '../../../assets/Logo/Logo_html.png'
+    },
+    {
+      name: 'CSS',
+      level: 2,
+      description: 'CSS',
+      icon: '../../../assets/Logo/Logo_css.png'
+    },
+    {
+      name: 'JavaScript',
+      level: 2,
+      description: 'JavaScript',
+      icon: '../../../assets/Logo/Logo_js.png'
+    },
+    {
       name: 'Angular',
       level: 2,
       description: 'Angular',
@@ -20,6 +38,12 @@ export class SkillsComponent {
       level: 1,
       description: 'React',
       icon: '../../../assets/Logo/Logo_react.png'
+    },
+    { 
+      name: 'Vue.js',
+      level: 1,
+      description: 'Vue.js',
+      icon: '../../../assets/Logo/Logo_vue.png'
     },
     {
       name: 'Node.js',
@@ -34,6 +58,12 @@ export class SkillsComponent {
       icon: '../../../assets/Logo/Logo_nest.png'
     },
     {
+      name: 'CSharp',
+      level: 2,
+      description: 'CSharp',
+      icon: '../../../assets/Logo/Logo_csharp.png'
+    },
+    {
       name: '.Net',
       level: 2,
       description: '.Net',
@@ -46,7 +76,7 @@ export class SkillsComponent {
       icon: '../../../assets/Logo/Logo_sql.png'
     },
     {
-      name: '.MongoDB',
+      name: 'MongoDB',
       level: 1,
       description: 'Mongo',
       icon: '../../../assets/Logo/Logo_mongo.png'
@@ -86,7 +116,19 @@ export class SkillsComponent {
       level: 2,
       description: 'Linux',
       icon: '../../../assets/Logo/Logo_linux.png'
-    }
+    },
+    {
+      name: 'AWS',
+      level: 1,
+      description: 'AWS',
+      icon: '../../../assets/Logo/Logo_aws.png'
+    },
+    {
+      name: 'Azure',
+      level: 1,
+      description: 'Azure',
+      icon: '../../../assets/Logo/Logo_azure.png'
+    },
   ];
 
   plusSkills: ISkill[] = [
