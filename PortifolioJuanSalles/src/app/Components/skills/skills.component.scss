@@ -1,0 +1,21 @@
+.container_skills{
+    max-width: 480px;
+    width: 100%;
+    min-width: 375px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+@media (min-width: 768px){
+    .container_skills{
+        max-width: none;
+    }
+}
+
+@media (min-width: 1024px){
+    .container_skills{
+        max-width: 1166px;
+    }
+    
+}
