@@ -23,5 +23,20 @@
         </div>
         <img class="fotoPerfil" src={{content[0]}} alt={{content[1]}}>
     </div>
+    <div *ngIf="typeWindown == 2" class="skill_container">
+        <div class="header-prompt">
+            <div class="icones-mac">
+                <div class="circulo vermelho"></div>
+                <div class="circulo amarelo"></div>
+                <div class="circulo verde"></div>
+            </div>
+        </div>
+        <ul>
+            <li *ngFor="let skill of Skills" class="skill-item">
+                <img src={{skill.icon}} alt="Logo {{skill.name}}">
+                <p>{{skill.name}}</p>
+            </li>
+        </ul>
+    </div>
     
 </section>
