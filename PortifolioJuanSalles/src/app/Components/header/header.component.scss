@@ -31,7 +31,7 @@ figure > img{
 nav{
     display: flex;
     flex-direction: column;
-    align-items: end;
+    align-items: flex-end;
 }
 .menu_hamburguer{
     display: flex;
@@ -135,7 +135,7 @@ a > img {
 
     .container_socialmedia{
         display: flex;
-        justify-content: end;
+        justify-content: flex-end;
     }
 
     .social-media_list{
@@ -158,13 +158,10 @@ a > img {
         max-width: 1280px;
         padding-inline: 50px;
     }
-    // figure{
-    //     display: flex;
-    //     justify-content: end;
-    // }
+    
      figure > img{
         width: 50px;
-        // margin-right: 20px;
+        
      }
 
     li > a{
@@ -173,9 +170,7 @@ a > img {
     
     a > img{
         width: 50px;
-        // padding-inline-end: 10px;
+        
     }
-    // .container_socialmedia{
-    //     justify-content: start;
-    // }
+    
 }
