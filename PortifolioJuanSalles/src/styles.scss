@@ -32,9 +32,9 @@ body{
 @media (min-width: 1716px){
     body{
         background:  url('../src/assets/Backgrounds/Background_anime2.png'), url('../src/assets/Backgrounds/Background_anime.png'), $background-color;
-        background-position: 0% 80%, 0% 0%, center;
+        background-position: 0% 65%, 0% 0%, center;
         background-repeat: no-repeat;
         background-size: auto, cover, cover;
-        background-attachment: fixed;
+        background-attachment: scroll, fixed, fixed;
     }
 }
