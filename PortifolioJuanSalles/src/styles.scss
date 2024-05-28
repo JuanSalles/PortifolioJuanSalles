@@ -6,11 +6,11 @@
 }
 
 body{
-    background:  url('../src/assets/Backgrounds/Background_anime.png'), $background-color;
-    background-position: start, center;
+    background:  $background-banner;
+    background-position: center;
     background-repeat: no-repeat;
-    background-size: cover, contain;
-    background-attachment: fixed, scroll;
+    background-size: cover;
+    background-attachment: fixed;
     color: $text-color;
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
@@ -27,14 +27,4 @@ body{
     font-weight: 500;
     margin-bottom: 15px;
     margin-top: 10px;
-}
-
-@media (min-width: 1716px){
-    body{
-        background:  url('../src/assets/Backgrounds/Background_anime2.png'), url('../src/assets/Backgrounds/Background_anime.png'), $background-color;
-        background-position: 0% 65%, 0% 0%, center;
-        background-repeat: no-repeat;
-        background-size: auto, cover, cover;
-        background-attachment: scroll, fixed, scroll;
-    }
 }

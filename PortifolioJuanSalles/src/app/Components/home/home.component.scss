@@ -2,30 +2,29 @@
 
 .home_section{
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     margin-top: 53.4333px;
     font-family: $font-banner;
     color: $text-color-banner;
-    border-bottom: 3px solid $border-banner;
     justify-content: center;
 }
 
  .container_Background{
-    background: url('../../../assets/Home/BACKGROUND-CORVOS1.png'), url('../../../assets/Home/BACKGROUND-CORVOS2.png'), $background-banner;
-    background-size:contain, contain, cover;
-    background-repeat: no-repeat, no-repeat, no-repeat; 
-    background-position: 0 0, 100% 100%, 0 0;
+    // background: url('../../../assets/Home/BACKGROUND-CORVOS1.png'), url('../../../assets/Home/BACKGROUND-CORVOS2.png');
+    // background-size:contain, contain;
+    // background-repeat: no-repeat, no-repeat; 
+    // background-position: 0 0, 100% 100%;
     width: 100vw;
-    height: 271px;
+    height: 200px;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 .Container_Textos{
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-rows: 0.5fr 1fr 0.5fr;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 .titulos{
@@ -33,14 +32,11 @@
     text-align: center;
 }
 h1{
-    font-size: 58px;
+    font-size: 80px;
     margin: 0;
     line-height: 0.8;
 }
 
-.citacao{
-    text-align: center;
-}
 p{
     font-size: 16px;
     margin: 0;
@@ -48,6 +44,7 @@ p{
 
 ul{
     display: flex;
+    justify-content: center;
     list-style: none;
     margin: 0;
     padding: 0;
@@ -92,7 +89,7 @@ figure > img{
 @media (min-width: 1024px){
 
     .container_Background{
-        height: 500px;
+        height: 300px;
     }
 
     h1{
